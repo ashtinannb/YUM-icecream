@@ -18,7 +18,14 @@ var icecream = {
     orm.update("icecream", {
       devoured: true
     }, condition, cb);
-  }
+  },
+  //    //delete icecream
+  //    deleteOne: function(condition, cb) {
+  //     orm.deleteOne('icecream', condition, function(res) {
+  //         cb(res);
+  //     });
+  // }
+
 };
 
 module.exports = icecream;

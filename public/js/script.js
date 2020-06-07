@@ -5,7 +5,7 @@ $(document).ready(function() {
   
       var icecream_id = $(this).children(".icecream_id").val();
       console.log(icecream_id);
-      $.ajax({
+      $.ajax ({
         method: "PUT",
         url: "/icecream/" + icecream_id
       }).then(function(data) {

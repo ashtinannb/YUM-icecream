@@ -9,33 +9,40 @@ router.get("/", function(req, res) {
 });
 
 router.get("/icecream", function(req, res) {
-  // express callback response by calling burger.selectAllBurger
   icecream.all(function(icecreamData) {
-    // wrapper for orm.js that using MySQL query callback will return burger_data, render to index with handlebar
     res.render("index", { icecream_data: icecreamData });
   });
 });
 
-// post route -> back to index
 router.post("/icecream/create", function(req, res) {
-  // takes the request object using it as input for burger.addBurger
   icecream.create(req.body.icecream_name, function(result) {
-    // wrapper for orm.js that using MySQL insert callback will return a log to console,
-    // render back to index with handle
     console.log(result);
     res.redirect("/");
   });
 });
 
-// put route -> back to index
+
 router.put("/icecream/:id", function(req, res) {
   icecream.update(req.params.id, function(result) {
-    // wrapper for orm.js that using MySQL update callback will return a log to console,
-    // render back to index with handle
     console.log(result);
-    // Send back response 
     res.sendStatus(200);
   });
 });
 
+//remove icecream
+router.delete("/icecream/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
+  console.log("condition", condition);
+
+  icecream.deleteOne(condition, function(result) {
+      if (result.changedRows === 0) {
+          //if the id does not exist, return 404
+          return res.status(404).end();
+      } else {
+          res.status(200).end();
+      }
+  });
+});
+
+ 
 module.exports = router;

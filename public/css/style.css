@@ -1,68 +1,121 @@
 body {
-    width: 99%;
-    height: 900px;
-    background-color: #fc6;
+  width: 99%;
+  height: 900px;
+background-color: lightpink;
+}
+
+.jumbotron {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 800;
+
+  background-image: url(https://www.katiepeastudio.com/s/Wallpaper_ice-cream_android_mint.jpg)
+
+}
+
+
+.container {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.container1 {
+float: ;
+font-family: 'Gloria Hallelujah', cursive;
+background-color: lightpink;
+}
+
+.container2 {
+  background-color: lightpink;
+  font-family: 'Gloria Hallelujah', cursive;
+  float: right;
+}
+
+.container3 {
+  background-color: lightpink;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.devoured-box {
+  margin-bottom: 15px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+#top-bar {
+  margin-top: 28px;
+}
+
+.spacing-reset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
   }
-  
-  #top-bar {
-    margin-top: 28px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
   }
-  
-  .spacing-reset {
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-  
-  .list-reset {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    border: 0;
-  }
-  
-  @media (min-width: 1200px) {
-    .container {
-      width: 990px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .container {
-      width: 990px;
-    }
-  }
-  
-  .enter_section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  #enter_text {
-    width: 400px;
-    height: 80px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: auto;
-    font-size: 38px;
-  }
-  
-  .task {
-    border-color: black;
-    border-style: solid;
-    border-width: 3px;
-  }
-  
-  .button-size {
-    padding-bottom: 20px;
-  }
-  
-  #text-enter-button {
-    margin-top: 10px;
-    margin-bottom: 18px;
-  }
-  
-  h1 {
-    color: #f30;
-  }
+}
+
+.enter_section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#enter_text {
+  width: 400px;
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  font-size: 38px;
+}
+
+.task {
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+}
+
+
+
+.available {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+#text-enter-button {
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.btn-primary {
+  size: 5px;
+  text-align: center;
+  background-color: yellow;
+  font-family: 'Gloria Hallelujah', cursive;
+
+  color: black;
+  border-color: yellow;
+  margin: 15px;
+}
+
+.btn-primary:hover {
+  background-color: lavender;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  border-color: teal;
+}
+

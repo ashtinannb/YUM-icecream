@@ -1,0 +1,1 @@
+SELECT * FROM icecream_db.icecream;
