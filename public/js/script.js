@@ -9,7 +9,7 @@ $(document).ready(function() {
         method: "PUT",
         url: "/icecream/" + icecream_id
       }).then(function(data) {
-        // reload page to display devoured icecream in proper column
+        // reload page to display devoured icecream 
         location.reload();
       });
   

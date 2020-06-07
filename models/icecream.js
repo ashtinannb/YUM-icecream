@@ -25,7 +25,6 @@ var icecream = {
   //         cb(res);
   //     });
   // }
-
 };
 
 module.exports = icecream;

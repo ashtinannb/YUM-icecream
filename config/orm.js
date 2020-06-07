@@ -1,3 +1,4 @@
+// ORM - takes functions and turns into db commands
 var connection = require("./connection.js");
 
 function printQuestionMarks(num) {
